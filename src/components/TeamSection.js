@@ -2,9 +2,11 @@ import Image from "next/image";
 
 const teamMembers = [
   { name: "Mr. ANSAR BILAL", role: "Cheif Excecutive officer", image: "/assets/img/team/pic2.jpg" },
+  { name: "Mr. ZAIN UL HAQ", role: "Senior Mobile Application Developer", image: "/assets/img/team/836.jpg" },
   { name: "Mr. ABUBAKAR", role: "Mobile Application Developer", image: "/assets/img/team/abubakar.jpg" },
-  { name: "Mr. MUZAMMIL MUKHTAR", role: "Backend Develper", image: "/assets/img/team/muzammil.jpg" },
-  { name: "Mr. EHTISHAM", role: "Jr Mobile Application Develper", image: "/assets/img/team/ehtisham.png" },
+  { name: "Mr. MUZAMMIL MUKHTAR", role: "Backend Developer", image: "/assets/img/team/muzammil.jpg" },
+  { name: "Mr. EHTISHAM SHAHBAZ", role: "Jr Mobile Application Developer", image: "/assets/img/team/ehtisham.jpg" },
+  { name: "Mr. AHMAD RAZA", role: "Graphics and web Designer", image: "/assets/img/team/ahmed.jpg" }
 ];
 
 export default function TeamSection() {

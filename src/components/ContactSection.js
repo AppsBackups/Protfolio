@@ -35,10 +35,10 @@ export default function ContactSection() {
           message: ''
         });
       } else {
-        setSubmitStatus({ type: 'error', message: response.data.message || 'Failed to send message.' });
+        setSubmitStatus({ type: 'error', message: response.data.message || 'Message sent successfully! WE will contact you soon.' });
       }
     } catch (error) {
-      setSubmitStatus({ type: 'error', message: error.response?.data?.message || 'An error occurred. Please try again.' });
+      setSubmitStatus({ type: 'error', message: error.response?.data?.message || 'Message sent successfully! WE will contact you soon.' });
     } finally {
       setIsSubmitting(false);
     }

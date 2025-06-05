@@ -13,7 +13,7 @@ const features = [
       "Backend Powerhouse: Node.js, Express.js, Nest.js, REST & GraphQL APIs, Microservices, and serverless architectures with AWS Lambda.",
       "Database Management: MongoDB, DynamoDB, PostgreSQL, MySQL, and scalable cloud storage solutions.",
     ],
-    image: "/assets/img/mern.png",
+    image: "/assets/img/pic-02.jpg",
   },
   {
     id: "features-tab-2",
@@ -26,7 +26,7 @@ const features = [
       "Node.js & Express: Real-time applications, WebSockets, scalable microservices, and seamless cloud integration.",
       "Python & FastAPI: AI-powered solutions, data analysis pipelines, machine learning models, and automation scripts.",
     ],
-    image: "/assets/img/laravel.jpg",
+    image: "/assets/img/pic-04.jpg",
   },
   {
     id: "features-tab-3",
@@ -39,7 +39,7 @@ const features = [
       "iOS Development: Swift & Objective-C, SwiftUI & UIKit, CoreML & ARKit, and secure App Store deployment.",
       "Custom API Integrations: Social media, payment gateways, GPS tracking, push notifications, and real-time updates.",
     ],
-    image: "/assets/img/pi.jpg",
+    image: "/assets/img/pic-01.jpg",
   },
   {
     id: "features-tab-4",
@@ -52,7 +52,7 @@ const features = [
       "Flutter: Dart-powered apps with stunning UI, hot reload for faster development, and high-performance animations.",
       "Unified Codebase: Single codebase for Android & iOS, reducing development time and maintenance overhead.",
     ],
-    image: "/assets/img/cross.jpg",
+    image: "/assets/img/pic-03.jpg",
   },
 ];
 

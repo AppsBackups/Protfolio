@@ -1,4 +1,4 @@
 #header.scrolled {
-  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+  background-color: #174160; /* Dark background */
   transition: background-color 0.3s ease-in-out;
 }

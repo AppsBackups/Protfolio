@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1f44d6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #174160; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -1562,6 +1562,33 @@ section,
 .team .member .pic {
   overflow: hidden;
   margin-bottom: 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(23, 65, 96, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.team .member .pic img {
+  display: block;
+  width: 80%;
+  height: 80;
+  object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: 12px;
+}
+
+.team .member:hover .pic {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 48px rgba(23, 65, 96, 0.18);
+}
+
+.team .member .pic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(23,65,96,0.04) 0%, rgba(23,65,96,0.12) 100%);
+  pointer-events: none;
+  border-radius: 12px;
 }
 
 .team .member .member-info {
@@ -1578,28 +1605,63 @@ section,
 }
 
 .team .member h4 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: 18px;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+  letter-spacing: 1px;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
 .team .member h4::after {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  width: 40px;
+  height: 2px;
+  background: var(--accent-color);
   bottom: 0;
   left: 0;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+
+.team .member:hover h4 {
+  color: var(--accent-color);
+}
+
+.team .member:hover h4::after {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .team .member span {
-  font-style: italic;
+  font-style: bold;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--heading-color);
   display: block;
-  font-size: 13px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.team .member .member-info {
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(23, 65, 96, 0.08);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 24px 18px;
+  background: color-mix(in srgb, var(--surface-color), transparent 2%);
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.team .member:hover .member-info {
+  box-shadow: 0 8px 32px rgba(23, 65, 96, 0.16);
+  border-color: var(--accent-color);
 }
 
 .team .member .social {
